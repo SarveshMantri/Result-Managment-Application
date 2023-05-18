@@ -1,0 +1,59 @@
+<div class="mb-3">
+    <a href="./student">Back</a>
+</div>
+
+<div class="mx-auto">
+    <h5 class="text-center">Result</h5>
+</div>
+
+
+<div class="container">
+    <div class="row my-3">
+        <div class="col text-center">
+            Roll No.
+        </div>
+        <div class="col text-center">
+            :
+        </div>
+        <div class="col text-center">
+            <%= result.roll %>
+        </div>
+    </div>
+
+    <div class="row my-3">
+
+        <div class="col text-center">
+            Name
+        </div>
+        <div class="col text-center">
+            :
+        </div>
+        <div class="col text-center">
+            <%= result.name %>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col text-center">
+            Date of Birth
+        </div>
+        <div class="col text-center">
+            :
+        </div>
+        <div class="col text-center">
+            <%= moment(result.dob).format('DD-MM-YYYY') %>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col text-center">
+            Score
+        </div>
+        <div class="col text-center">
+            :
+        </div>
+        <div class="col text-center">
+            <%= result.score %>
+        </div>
+    </div>
+</div>

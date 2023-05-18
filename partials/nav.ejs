@@ -1,0 +1,8 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="../">Result Management System</a>
+    <% if(locals.user){ %>
+    <div class="d-flex">
+        <a href="/teacher/logout" class="btn btn-outline-danger" type="submit">Logout</a>
+    </div>
+    <% } %>
+</nav>

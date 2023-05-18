@@ -1,0 +1,18 @@
+<% if(locals.success){ %>
+    <div class="alert alert-danger" role="alert">
+        <%= success %>
+    </div>
+<% } %>
+<div class="mx-auto">
+    <h3 class="text-center"> Login As </h3>
+</div>
+<br>
+<br>
+<div class="d-flex justify-content-around">
+    <div>
+        <a type="button" href="/teacher/login" class="btn btn-primary btn-lg btn-block px-5">Teacher</a>
+    </div>
+    <div>
+        <a href="/student" class="btn btn-primary btn-lg btn-block px-5">Student</a>
+    </div>
+</div>

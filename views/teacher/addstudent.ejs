@@ -1,0 +1,34 @@
+<div class="mb-3">
+    <a href="./">Back</a>
+</div>
+
+<% if(locals.errors){ %>
+    <%  errors.forEach(element => { %>
+        <div class="alert alert-danger" role="alert">
+            <%= element.msg %>
+        </div>
+    <%}) %>
+<% } %>
+<div class="center-div mb-3">
+    <h2>Add student</h2>
+</div>
+<form method="post">
+    <div class="mb-3">
+        <label for="studentName" class="form-label">Roll No.</label>
+        <input type="number" class="form-control" name="roll">
+    </div>
+    <div class="mb-3">
+        <label for="studentName" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name">
+    </div>
+    <div class="mb-3">
+        <label for="studentName" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" name="dob" value="2000-01-01">
+    </div>
+    <div class="mb-3">
+        <label for="studentName" class="form-label">Score</label>
+        <input type="number" class="form-control" name="score">
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block my-3">Submit</button>
+    <button type="reset" class="btn btn-primary btn-lg btn-block my-3">Clear</button>
+</form>

@@ -1,0 +1,21 @@
+<% if(locals.error){ %>
+    <div class="alert alert-danger" role="alert">
+        <%= error %>
+    </div>
+<% } %>
+
+<div class="mx-auto">
+    <h4 class="text-center"> Find Result </h4>
+</div>
+<form method="post">
+    <div class="mb-3">
+        <label for="rollNo" class="form-label">Roll No.</label>
+        <input type="text" class="form-control" name="rollNo" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="studentName" class="form-label">Name</label>
+        <input type="text" class="form-control" name="studentName">
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block my-3">Submit</button>
+    <button type="reset" class="btn btn-primary btn-lg btn-block my-3">Clear</button>
+</form>
